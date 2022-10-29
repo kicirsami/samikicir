@@ -97,3 +97,30 @@ sr.reveal('.home__social, .home__scroll', {delay: 700, origin: 'bottom'})
 sr.reveal('.nav__menu', {delay: 700, origin: 'bottom'})
 
 
+
+/*=============== FORM RESET ===============*/
+
+function submitForm() {
+    
+    var btnClear = document.querySelector('submit');
+    var inputs = document.querySelectorAll('names');
+    var inputs = document.querySelectorAll('mail');
+    var inputs = document.querySelectorAll('project');
+ 
+    btnClear.addEventListener('click', () => {
+    
+    inputs.forEach(input =>  input.value = '');
+    }); 
+}
+
+
+   
+
+
+
+
+
+
+
+
+ 

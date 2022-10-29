@@ -593,23 +593,23 @@
                     <div class="contact__content reveal fade-right">
                         <h3 class="contact__title">Write me your project</h3>
                         
-                        <form action="" class="contact__form">
+                        <form action="https://formspree.io/f/xrgdyjpp" method="POST" class="contact__form" name="contact-form">
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Names</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                                <input type="text" id="names" name="names" placeholder="Insert your name" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Insert your email" class="contact__form-input">
+                                <input type="email" id="mail" name="mail" placeholder="Insert your email" class="contact__form-input" required>
                             </div>
 
                             <div class="contact__form-div contact__form-area">
                                 <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" placeholder="Write your project" class="contact__form-input"></textarea>
+                                <textarea name="project" id="project" placeholder="Write your project" class="contact__form-input"required></textarea>
                             </div>
 
-                            <button class="button">Send Message</button>
+                            <button class="button submit" onclick="submitForm()">Send Message</button>
                         </form>
                         
                     </div>
